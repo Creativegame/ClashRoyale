@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="40" tilewidth="30" tileheight="30" nextobjectid="7">
+ <tileset firstgid="1" name="battle_map" tilewidth="30" tileheight="30">
+  <image source="battle_map.png" width="120" height="30"/>
+  <tile id="0">
+   <properties>
+    <property name="walkable" value="1"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="walkable" value="0"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="battle_map_tower_defend" tilewidth="103" tileheight="102">
+  <image source="battle_map_tower_defend.png" width="103" height="102"/>
+ </tileset>
+ <tileset firstgid="6" name="battle_map_tower_king" tilewidth="135" tileheight="155">
+  <image source="battle_map_tower_king.png" width="135" height="155"/>
+ </tileset>
+ <layer name="walkable" width="30" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt0TEKACAMBMGY/z/a3lJDFJxiyzAHyYhIqaFRHJfL5XK5O+66oePmpvvbf7lcLpf7piudNgFhhQct
+  </data>
+ </layer>
+ <layer name="background" width="30" height="40" opacity="0">
+  <data encoding="base64" compression="zlib">
+   eJztz6ENADAMA0FL9f4zpzMUNOSA9dC6Jjl3/dyNzy598vLy8vLy8vLy8vLy8vLy8vK+dwALlhBp
+  </data>
+ </layer>
+ <objectgroup name="tower">
+  <object id="1" gid="6" x="383.52" y="1049.99" width="135" height="155">
+   <properties>
+    <property name="side" value="player"/>
+    <property name="type" value="king"/>
+   </properties>
+  </object>
+  <object id="2" gid="5" x="599" y="899" width="103" height="102">
+   <properties>
+    <property name="road" value="right"/>
+    <property name="side" value="player"/>
+    <property name="type" value="defend"/>
+   </properties>
+  </object>
+  <object id="3" gid="5" x="205.74" y="900.781" width="103" height="102">
+   <properties>
+    <property name="road" value="left"/>
+    <property name="side" value="player"/>
+    <property name="type" value="defend"/>
+   </properties>
+  </object>
+  <object id="4" gid="5" x="205.52" y="359.547" width="103" height="102">
+   <properties>
+    <property name="road" value="left"/>
+    <property name="side" value="npc"/>
+    <property name="type" value="defend"/>
+   </properties>
+  </object>
+  <object id="5" gid="5" x="594.26" y="361.026" width="103" height="102">
+   <properties>
+    <property name="road" value="right"/>
+    <property name="side" value="npc"/>
+    <property name="type" value="defend"/>
+   </properties>
+  </object>
+  <object id="6" gid="6" x="382.48" y="273.246" width="135" height="155">
+   <properties>
+    <property name="side" value="npc"/>
+    <property name="type" value="king"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
